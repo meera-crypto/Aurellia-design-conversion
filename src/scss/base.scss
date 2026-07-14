@@ -1,0 +1,17 @@
+//utils
+@use "utils/variables";
+@use "utils/mixins";
+
+//global
+@use "global/typography";
+@use "global/global";
+@use "global/icons";
+
+//layout
+@use "layout/header";
+@use "layout/navbar";
+@use "layout/footer";
+@use "layout/marquee";
+
+//components
+@use "component/button";

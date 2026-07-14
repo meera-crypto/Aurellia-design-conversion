@@ -1,0 +1,45 @@
+:root {
+}
+
+//Theme Colors
+$color-brand-primary: #7a0026;
+$color-brand-secondary: #dc9e05;
+$color-accent: #f9efd7;
+
+$color-background-primary: #fff9f0;
+$color-background-secondary: #ffefe1;
+
+$color-black: #111111;
+$color-white: #ffffff;
+$color-gray: #333333;
+$color-gray-light: #707070;
+
+$color-green: #038745;
+$color-crimson: #a50d3d;
+
+$color-gold-product: #ebb352;
+$color-silver-product: #d9d9d9;
+$color-antique-product: #c0a472;
+$color-light-gold-product: #ffda9b;
+$color-ruby-product: #c53559;
+
+$color-gray-border: #cccccc;
+$color-gray-border-light: #dddddd;
+
+//Fonts
+$font-secondary: "Inter", sans-serif;
+$font-primary: "Marcellus", serif;
+
+//Breakpoints
+$desktop-lg: 1919px; // 1919 - Wide Desktop Screens (Like Above 1680 - Large Screens)
+$desktop-md: 1679px; // 1679 - Medium Desktop Screens (Like 1480 - Macbook & Macbook Pro)
+$desktop-sm: 1420px; // 1420 - Small Desktop Screens
+$desktop-xs: 1360px; // 1360 - Small Desktop Screens
+
+$tablet-lg: 1250px; // 1250 Landscape Tablet
+$tablet-md: 991px; // 991 Portrait Medium Tablet
+$tablet-sm: 865px; // 865 Portrait Tablet
+
+$mobile-lg: 767px; // 767 Mobile Landscape
+$mobile-md: 576px; // 576 Mobile Medium Portrait
+$mobile-sm: 540px; // 540 Mobile Portrait

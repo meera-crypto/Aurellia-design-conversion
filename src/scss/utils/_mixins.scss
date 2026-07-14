@@ -1,0 +1,68 @@
+@use "sass:math";
+@use "variables" as *;
+
+// PX to REM
+@function rem($value) {
+  @return math.div($value, 16) * 1rem;
+}
+
+// breakpoints
+@mixin desktop-lg() {
+  @media (max-width: $desktop-lg) {
+    @content;
+  }
+}
+
+@mixin desktop-md() {
+  @media (max-width: $desktop-md) {
+    @content;
+  }
+}
+
+@mixin desktop-sm() {
+  @media (max-width: $desktop-sm) {
+    @content;
+  }
+}
+
+@mixin desktop-xs() {
+  @media (max-width: $desktop-xs) {
+    @content;
+  }
+}
+
+@mixin tablet-lg() {
+  @media (max-width: $tablet-lg) {
+    @content;
+  }
+}
+
+@mixin tablet-md() {
+  @media (max-width: $tablet-md) {
+    @content;
+  }
+}
+
+@mixin tablet-sm() {
+  @media (max-width: $tablet-sm) {
+    @content;
+  }
+}
+
+@mixin mobile-lg() {
+  @media (max-width: $mobile-lg) {
+    @content;
+  }
+}
+
+@mixin mobile-md() {
+  @media (max-width: $mobile-md) {
+    @content;
+  }
+}
+
+@mixin mobile-sm() {
+  @media (max-width: $mobile-sm) {
+    @content;
+  }
+}

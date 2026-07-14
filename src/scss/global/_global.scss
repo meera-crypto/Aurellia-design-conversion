@@ -1,0 +1,66 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as mixins;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: $font-secondary;
+  line-height: 1.5;
+  color: $color-black;
+  background: $color-background-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: mixins.rem(1400);
+
+  @include mixins.desktop-md() {
+    // max-width: mixins.rem(1280); // 1679
+    max-width: mixins.rem(1400);
+  }
+
+  @include mixins.desktop-sm() {
+    max-width: mixins.rem(1368); // 1420 macbook
+  }
+  @include mixins.desktop-xs() {
+    max-width: mixins.rem(1200); // 1360
+  }
+
+  @include mixins.tablet-lg() {
+    max-width: mixins.rem(1100); // 1250
+  }
+  @include mixins.tablet-md() {
+    max-width: mixins.rem(992); // 992
+  }
+  @include mixins.tablet-sm() {
+    max-width: mixins.rem(865); // 865
+  }
+  @include mixins.mobile-lg() {
+    max-width: mixins.rem(767); // 767
+  }
+  @include mixins.mobile-md() {
+    max-width: mixins.rem(576); // 576
+  }
+  @include mixins.mobile-sm() {
+    max-width: mixins.rem(540); // 540
+  }
+}
+
+a {
+  text-decoration: none;
+}
