@@ -1,6 +1,3 @@
-@use "../utils/variables" as *;
-@use "../utils/mixins" as mixins;
-
 *,
 *::before,
 *::after {
@@ -16,7 +13,8 @@ body {
   min-height: 100vh;
   font-family: $font-secondary;
   line-height: 1.5;
-  color: $color-black;
+  font-weight: 400;
+  color: $color-dark;
   background: $color-background-primary;
 }
 
@@ -27,40 +25,77 @@ img {
 }
 
 .container {
-  max-width: mixins.rem(1400);
+  width: 100%;
+  max-width: rem(1560);
+  padding-inline: rem(30);
 
-  @include mixins.desktop-md() {
-    // max-width: mixins.rem(1280); // 1679
-    max-width: mixins.rem(1400);
-  }
-
-  @include mixins.desktop-sm() {
-    max-width: mixins.rem(1368); // 1420 macbook
-  }
-  @include mixins.desktop-xs() {
-    max-width: mixins.rem(1200); // 1360
+  @include desktop-sm() {
+    max-width: rem(1368);
   }
 
-  @include mixins.tablet-lg() {
-    max-width: mixins.rem(1100); // 1250
+  @include desktop-xs() {
+    max-width: rem(1200);
   }
-  @include mixins.tablet-md() {
-    max-width: mixins.rem(992); // 992
+
+  @include tablet-lg() {
+    max-width: rem(1100);
   }
-  @include mixins.tablet-sm() {
-    max-width: mixins.rem(865); // 865
+
+  @include tablet-md() {
+    max-width: rem(960);
   }
-  @include mixins.mobile-lg() {
-    max-width: mixins.rem(767); // 767
+
+  @include tablet-sm() {
+    max-width: 100%;
   }
-  @include mixins.mobile-md() {
-    max-width: mixins.rem(576); // 576
+
+  @include mobile-lg() {
+    padding-inline: rem(16);
   }
-  @include mixins.mobile-sm() {
-    max-width: mixins.rem(540); // 540
+
+  @include mobile-md() {
+    padding-inline: rem(14);
+  }
+
+  @include mobile-sm() {
+    padding-inline: rem(12);
   }
 }
 
 a {
   text-decoration: none;
+  color: $color-dark;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: rem(4);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.icon {
+  font-size: rem(24);
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.heading-spacing {
+  margin-bottom: rem(12);
+}
+
+.section-spacing {
+  padding: rem(80) 0;
 }

@@ -4,6 +4,13 @@ import { resolve } from 'path';
 export default defineConfig({
   root: 'src',
   publicDir: false,
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ['import'],
+      },
+    },
+  },
   build: {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,

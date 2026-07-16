@@ -1,0 +1,25 @@
+nav {
+  position: sticky;
+}
+
+.main-navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: rem(44);
+}
+
+.main-navigation-item,
+.nav-item {
+  a {
+    color: $color-gray-dark;
+  }
+}
+
+.main-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  border-bottom: 1px solid $color-gray-border;
+  width: 100%;
+}

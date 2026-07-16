@@ -1,17 +1,17 @@
 //utils
-@use "utils/variables";
-@use "utils/mixins";
+@import "utils/variables";
+@import "utils/mixins";
 
 //global
-@use "global/typography";
-@use "global/global";
-@use "global/icons";
+@import "global/typography";
+@import "global/global";
+@import "global/icons";
 
 //layout
-@use "layout/header";
-@use "layout/navbar";
-@use "layout/footer";
-@use "layout/marquee";
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
+@import "layout/marquee";
 
 //components
-@use "component/button";
+@import "component/button";

@@ -1,0 +1,33 @@
+header {
+  font-family: $font-secondary;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.header-main {
+  background-color: $color-brand-primary;
+}
+
+.header-nav {
+  &-link {
+    color: $color-white;
+  }
+
+  &-list {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    gap: rem(36);
+  }
+}
+
+.icon-favorite-white {
+  font-size: rem(21);
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: rem(24);
+}

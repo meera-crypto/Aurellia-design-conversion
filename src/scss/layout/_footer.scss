@@ -1,0 +1,148 @@
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $color-gray-border-light;
+  padding: rem(20) 0;
+}
+
+.footer-experience {
+  background-color: $color-background-secondary;
+  padding: rem(80) 0;
+}
+
+.footer-experience-text p {
+  color: $color-gray;
+}
+
+.icon-experience {
+  font-size: rem(56);
+}
+
+.footer-experience-icons {
+  text-align: left;
+  padding: rem(20) 0;
+  gap: rem(44);
+}
+
+.experience-content p {
+  font-size: rem(14);
+  line-height: 1.7;
+}
+
+.experience-footer-btn {
+  margin-top: rem(16);
+  margin-bottom: rem(20);
+}
+
+.icon-arrow-primary {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.newsletter {
+  &-column p {
+    color: $color-gray-dark;
+  }
+
+  &-form {
+    margin-top: rem(36);
+  }
+
+  &-input {
+    width: 100%;
+    padding: rem(20);
+    border: 1px solid $color-gray-border;
+  }
+
+  &-terms-conditions-container {
+    margin-top: rem(16);
+    margin-bottom: rem(32);
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: rem(4);
+    }
+  }
+
+  &-terms-conditions-label {
+    margin-left: rem(12);
+    font-size: rem(14);
+    line-height: 1.7;
+    color: $color-black;
+  }
+
+  &-terms-conditions-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: rem(20);
+    height: rem(20);
+    background-color: transparent;
+    border: 1px solid $color-brand-primary; // Your desired border color
+  }
+}
+
+.contact-link {
+  color: $color-brand-primary;
+}
+
+.page-links-column {
+  display: flex;
+  flex-direction: row;
+  gap: rem(80);
+
+  h5 {
+    margin-bottom: rem(24);
+  }
+
+  li {
+    margin-bottom: rem(12) !important;
+  }
+}
+
+.social-media {
+  display: flex;
+  font-family: $font-primary;
+  align-items: center;
+
+  p {
+    font-size: rem(22);
+    line-height: 1.3;
+    margin-right: rem(16);
+  }
+
+  .icon {
+    display: block; // or inline-flex; avoids baseline quirk
+    line-height: 1;
+  }
+
+  &-links {
+    display: flex;
+  }
+}
+
+.social-links {
+  border-bottom: 1px solid $color-gray-border-light;
+  border-top: 1px solid $color-gray-border-light;
+}
+
+.social-media-links {
+  display: flex;
+  gap: rem(20);
+}
+
+.copyright-policy {
+  display: flex;
+  justify-content: flex-end;
+  gap: rem(64);
+}
+
+.copyright-brand-link {
+  color: $color-brand-primary;
+}
+
+.copyright-content {
+  padding: rem(40) 0 rem(80) 0;
+}

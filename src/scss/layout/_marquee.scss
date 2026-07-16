@@ -1,0 +1,32 @@
+.marquee {
+  overflow: hidden;
+  padding: rem(20) 0;
+  border-top: 1px solid $color-gray-border;
+  border-bottom: 1px solid $color-gray-border;
+  font-family: $font-primary;
+  color: $color-brand-primary;
+  font-size: rem(16);
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+
+  gap: rem(36);
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(50%));
+  }
+}
+
+.marquee-text {
+  flex: 0 0 auto; // Don't grow or shrink
+  white-space: nowrap; // Prevent text wrapping
+}
