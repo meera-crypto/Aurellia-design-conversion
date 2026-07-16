@@ -23,3 +23,18 @@ nav {
   border-bottom: 1px solid $color-gray-border;
   width: 100%;
 }
+
+.navbar {
+  &-main {
+    display: flex;
+    justify-content: start;
+    gap: rem(24);
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(16);
+  }
+}

@@ -21,7 +21,6 @@
 .footer-experience-icons {
   text-align: left;
   padding: rem(20) 0;
-  gap: rem(44);
 }
 
 .experience-content p {
@@ -114,7 +113,7 @@
   }
 
   .icon {
-    display: block; // or inline-flex; avoids baseline quirk
+    display: block;
     line-height: 1;
   }
 
@@ -145,4 +144,38 @@
 
 .copyright-content {
   padding: rem(40) 0 rem(80) 0;
+}
+
+.footer-experience-text {
+  text-align: center;
+  margin-bottom: rem(48);
+}
+
+.footer-links-newsletter {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.copyright-content {
+  display: flex;
+  align-items: center;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: rem(16);
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  padding: rem(16) 0;
+}
+
+.customer-service-column-footer {
+  display: flex;
+  justify-content: end;
 }

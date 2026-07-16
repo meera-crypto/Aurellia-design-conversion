@@ -31,3 +31,14 @@ header {
   justify-content: flex-end;
   gap: rem(24);
 }
+
+.header-menu {
+  align-items: center;
+  padding: rem(8) 0;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
