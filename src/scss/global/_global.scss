@@ -18,12 +18,6 @@ body {
   background: $color-background-primary;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .container {
   width: 100%;
   max-width: rem(1560);
@@ -98,4 +92,8 @@ li {
 
 .section-spacing {
   padding: rem(80) 0;
+}
+
+.min-height-80vh {
+  min-height: 80vh;
 }

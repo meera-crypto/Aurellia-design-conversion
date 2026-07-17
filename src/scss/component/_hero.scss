@@ -1,0 +1,21 @@
+.background-image {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/assets/images/background/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none; // clicks pass through to content
+  }
+
+  // keep children above the image
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}

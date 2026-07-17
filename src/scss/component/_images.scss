@@ -1,0 +1,30 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-dimension {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oval-image {
+  &-hero {
+    width: 464px;
+    height: 720px;
+    border-radius: 243px;
+    overflow: hidden;
+    display: block;
+  }
+
+  &-hero-second {
+    height: 390px;
+    width: 180px;
+    border-radius: 92px;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    display: block;
+  }
+}
