@@ -110,4 +110,14 @@ img {
     overflow: hidden;
     display: block;
   }
+
+  &-combo-offer {
+    width: rem(691);
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 691 / 647;
+    border-top-right-radius: rem(100);
+    overflow: hidden;
+    display: block;
+  }
 }

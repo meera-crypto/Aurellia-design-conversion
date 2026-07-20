@@ -13,7 +13,7 @@
 .shop-by-occasion {
   &-image {
     position: relative;
-    align-self: center;
+
     img {
       padding: rem(20);
       border-radius: rem(200);
@@ -23,15 +23,20 @@
   &-icon {
     position: absolute;
     top: 0;
-    right: rem(-60);
-    transform: translate(60%, 90%);
+    right: rem(60);
     font-size: rem(60);
+  }
+
+  &-text-content {
+    position: sticky;
+    top: rem(100);
   }
 }
 
-.shop-by-occasion-row {
+.shop-by-occasion-scroll {
   display: flex;
   justify-content: flex-end;
+  padding-top: rem(100);
 }
 
 .occasion-card {
@@ -41,10 +46,6 @@
 }
 .shop-by-occasion {
   &-scroll {
-    height: rem(750);
-    overflow-y: auto;
-    overflow-x: hidden;
-
     display: flex;
     flex-direction: column;
     gap: rem(20);

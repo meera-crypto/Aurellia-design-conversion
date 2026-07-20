@@ -1,0 +1,51 @@
+.combo-offers-section {
+  .col-lg-6 {
+    min-width: 0;
+  }
+
+  .slider {
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider__item {
+    width: calc(50% - #{rem(12)});
+  }
+
+  .oval-image-product-occasion {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 350 / 400;
+  }
+}
+
+.combo-offers-button {
+  margin-top: rem(32);
+  margin-inline: auto;
+}
+
+.combo-offers-image {
+  span {
+    font-size: rem(63);
+  }
+}
+
+.combo-offers-image {
+  position: relative;
+  display: inline-block;
+
+  .icon-star {
+    position: absolute;
+    top: 0;
+    right: rem(-60);
+    transform: translateY(-70%);
+    z-index: 2;
+  }
+}
+
+// .combo-offers-image {
+//   display: flex;
+//   align-items: center;
+//   gap: rem(16);
+// }

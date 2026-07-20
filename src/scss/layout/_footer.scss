@@ -44,7 +44,7 @@
 
   &-input {
     width: 100%;
-    padding: rem(20);
+    padding: rem(16);
     border: 1px solid $color-gray-border;
   }
 
@@ -171,5 +171,5 @@
 
 .customer-service-column-footer {
   display: flex;
-  justify-content: end;
+  justify-content: start;
 }
