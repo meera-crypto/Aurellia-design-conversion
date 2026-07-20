@@ -1,3 +1,66 @@
 .shop-by-occasion-section {
   background-color: $color-background-secondary;
 }
+
+.shop-by-occasion-content {
+  p {
+    color: $color-gray-dark;
+    margin-top: rem(24);
+    margin-bottom: rem(32);
+  }
+}
+
+.shop-by-occasion {
+  &-image {
+    position: relative;
+    align-self: center;
+    img {
+      padding: rem(20);
+      border-radius: rem(200);
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    top: 0;
+    right: rem(-60);
+    transform: translate(60%, 90%);
+    font-size: rem(60);
+  }
+}
+
+.shop-by-occasion-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.occasion-card {
+  span {
+    margin: rem(20) 0;
+  }
+}
+.shop-by-occasion {
+  &-scroll {
+    height: rem(750);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-row {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+}

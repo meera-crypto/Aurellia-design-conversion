@@ -71,9 +71,9 @@ img {
     display: block;
   }
 
-  &-product {
+  &-product-occasion {
     width: rem(350);
-    height: auto;
+    height: rem(400);
     border-top-left-radius: rem(100);
     overflow: hidden;
     display: block;
@@ -99,6 +99,14 @@ img {
     height: rem(470);
     width: rem(375);
     border-top-right-radius: rem(100);
+    overflow: hidden;
+    display: block;
+  }
+
+  &-shop-by-occasion {
+    height: rem(521);
+    width: rem(359);
+    border-radius: rem(200);
     overflow: hidden;
     display: block;
   }
