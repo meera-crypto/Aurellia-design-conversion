@@ -127,7 +127,7 @@
       }
     }
 
-    &--sale {
+    &--ribbon {
       position: absolute;
 
       /* Position before rotation */
@@ -141,15 +141,19 @@
       align-items: center;
       justify-content: center;
 
-      background: $color-crimson;
       color: $color-white;
 
-      font-size: rem(14);
       font-weight: 500;
-      line-height: 1;
+      line-height: 1.5;
 
       transform: rotate(-45deg);
       z-index: 2;
+    }
+    &--sale {
+      background: $color-crimson;
+    }
+    &--new {
+      background: $color-green;
     }
   }
 }
@@ -157,4 +161,9 @@
 .product-card-image {
   position: relative;
   overflow: hidden;
+
+  &:hover {
+    transform: scale(0.98);
+    transition: transform 0.3s ease;
+  }
 }

@@ -1,0 +1,32 @@
+.featured-collection-images {
+  display: flex;
+  gap: rem(20);
+}
+
+.featured-collection {
+  &-title {
+    margin-bottom: rem(24);
+    border-bottom: solid rem(1) $color-gray-border-light;
+    padding-bottom: rem(24);
+  }
+  &-content {
+    p {
+      margin-bottom: rem(48);
+      color: $color-gray-dark;
+    }
+  }
+}
+
+.featured-collection-image-title {
+  display: block;
+  text-align: center;
+  margin-top: rem(20);
+  color: $color-gray-dark;
+}
+
+.featured-collection-image {
+  &:hover {
+    transform: scale(0.98);
+    transition: transform 0.3s ease-in-out;
+  }
+}

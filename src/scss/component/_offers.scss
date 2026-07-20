@@ -1,0 +1,39 @@
+.top-offers {
+  &-image {
+    position: relative;
+  }
+
+  &-offer-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(24);
+    padding: rem(28);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 2;
+  }
+
+  &-offer {
+    font-family: $font-primary;
+    font-size: rem(40);
+    line-height: 1.1;
+    color: $color-offers-text;
+
+    span {
+      font-size: rem(52);
+    }
+  }
+
+  &-offer-text {
+    color: $color-gray-darkest;
+    margin-top: rem(8);
+  }
+
+  &-button {
+    margin-top: rem(24);
+  }
+}

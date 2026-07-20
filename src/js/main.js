@@ -29,5 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
       });
     });
+
+    const updateArrows = () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+
+      prev?.classList.toggle("is-hidden", track.scrollLeft <= 1);
+      next?.classList.toggle("is-hidden", track.scrollLeft >= maxScroll - 1);
+    };
+
+    track.addEventListener("scroll", updateArrows);
+    window.addEventListener("resize", updateArrows);
+
+    updateArrows();
   });
 });

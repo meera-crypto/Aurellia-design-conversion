@@ -31,11 +31,40 @@ button {
   }
 }
 
+.slider {
+  position: relative;
+
+  &:hover {
+    .slider-nav:not(.is-hidden) {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}
+
 .slider-nav {
-  border: 1px solid $color-gray-border-light;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   padding: rem(12);
+
+  border: 1px solid $color-gray-border-light;
   background: $color-white;
-  flex-shrink: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
 
   &:disabled {
     opacity: 0.4;
@@ -43,6 +72,18 @@ button {
   }
 
   &--prev {
-    transform: rotate(180deg);
+    left: rem(12);
+
+    .icon-arrow-primary {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--next {
+    right: rem(12);
+  }
+
+  &.is-hidden {
+    display: none;
   }
 }

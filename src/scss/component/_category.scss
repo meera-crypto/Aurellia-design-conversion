@@ -8,11 +8,19 @@
     flex-direction: column;
     align-items: center;
     gap: rem(16);
+    &:hover {
+      text-decoration: none;
+    }
 
     img {
       padding: rem(20);
       border: 1px solid $color-brand-secondary;
       border-radius: rem(120);
+
+      &:hover {
+        transform: scale(0.98);
+        transition: transform 0.3s ease;
+      }
     }
 
     span {

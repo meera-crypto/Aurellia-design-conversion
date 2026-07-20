@@ -267,13 +267,13 @@
               </div>
             </div>
             <div class="slider">
-              <!--<button
+              <button
                 class="slider-nav slider-nav--prev"
                 type="button"
                 aria-label="Previous"
               >
                 <span class="icon-arrow-primary"></span>
-              </button>-->
+              </button>
 
               <div class="slider__track col-12">
                 <a href="#" class="slider__item category-item">
@@ -362,15 +362,29 @@
                   </picture>
                   <span>Pendants</span>
                 </a>
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/pendants.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/pendants.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Pendants</span>
+                </a>
               </div>
 
-              <!--<button
+              <button
                 class="slider-nav slider-nav--next"
                 type="button"
                 aria-label="Next"
               >
                 <span class="icon-arrow-primary"></span>
-              </button>-->
+              </button>
             </div>
           </div>
         </div>
@@ -394,6 +408,14 @@
               </div>
             </div>
             <div class="slider col-12">
+              <button
+                class="slider-nav slider-nav--prev"
+                type="button"
+                aria-label="Previous"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>
+
               <ul class="slider__track best-seller-slider">
                 <li class="slider__item best-sellers-item">
                   <a href="#" class="product-card">
@@ -474,7 +496,9 @@
                       </button>
 
                       <!-- Sale -->
-                      <span class="product-card-badge product-card-badge--sale">
+                      <span
+                        class="product-card-badge product-card-badge--ribbon product-card-badge--sale"
+                      >
                         Sale
                       </span>
                     </div>
@@ -594,6 +618,13 @@
                       >
                         <span class="icon-favorite-primary"></span>
                       </button>
+
+                      <!-- New -->
+                      <span
+                        class="product-card-badge product-card-badge--ribbon product-card-badge--new"
+                      >
+                        New
+                      </span>
                     </div>
                     <div class="product-card-content">
                       <h6>Aurellia Gold Earrings</h6>
@@ -634,13 +665,135 @@
                   </a>
                 </li>
               </ul>
+
+              <button
+                class="slider-nav slider-nav--next"
+                type="button"
+                aria-label="Next"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured collection Section-->
+      <section
+        class="featured-collection-section background-image background-image--flipped"
+      >
+        <div class="container">
+          <div class="row section-spacing">
+            <div class="section-header col-12">
+              <div class="section-header__content">
+                <h2 class="section-header__title">Featured Collection</h2>
+                <p class="section-header__subtitle">
+                  Discover timeless pieces crafted to complement every style
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="featured-collection-images">
+                  <a href="">
+                    <div class="featured-collection-image">
+                      <picture class="oval-image-featured-collection">
+                        <source
+                          srcset="
+                            /assets/images/featured-collection/diamond-collection.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/featured-collection/diamond-collection.jpg"
+                          alt="Featured collection"
+                          class="image-dimension"
+                        />
+                      </picture>
+                    </div>
+                    <span class="featured-collection-image-title">
+                      Diamond Collection</span
+                    >
+                  </a>
+
+                  <a href="">
+                    <div class="featured-collection-image">
+                      <picture class="oval-image-featured-collection-secondary">
+                        <source
+                          srcset="
+                            /assets/images/featured-collection/wedding.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/featured-collection/wedding.jpg"
+                          alt="Featured collection"
+                          class="image-dimension"
+                        />
+                      </picture>
+                    </div>
+                    <span class="featured-collection-image-title">
+                      Wedding Collection</span
+                    >
+                  </a>
+
+                  <a href="">
+                    <div class="featured-collection-image">
+                      <picture class="oval-image-featured-collection">
+                        <source
+                          srcset="
+                            /assets/images/featured-collection/daily-wear.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/featured-collection/daily-wear.jpg"
+                          alt="Featured collection"
+                          class="image-dimension"
+                        />
+                      </picture>
+                    </div>
+                    <span class="featured-collection-image-title">
+                      Daily Wear Collection</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <h3 class="featured-collection-title">Wedding Collection</h3>
+                <div class="featured-collection-content">
+                  <p>
+                    Discover timeless pieces crafted to complement every
+                    style—whether you're dressing for everyday elegance or
+                    celebrating a special moment.
+                  </p>
+                  <button class="btn-primary">
+                    <span class="btn-label">View Details</span>
+                    <span class="icon-arrow-white"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Shop by occasion collection Section-->
+      <section class="shop-by-occasion-section">
+        <div class="container">
+          <div class="row section-spacing">
+            <div class="section-header col-12">
+              <div class="section-header__content">
+                <h2 class="section-header__title">Shop by Occasion</h2>
+                <p class="section-header__subtitle">
+                  Discover timeless pieces crafted to complement every style
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Trending collection Section-->
-      <section class="best-sellers-section">
+      <section class="trending-collection-section">
         <div class="container">
           <div class="row section-spacing">
             <div class="section-header col-12">
@@ -658,6 +811,14 @@
               </div>
             </div>
             <div class="slider col-12">
+              <button
+                class="slider-nav slider-nav--prev"
+                type="button"
+                aria-label="Previous"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>
+
               <ul class="slider__track best-seller-slider">
                 <li class="slider__item best-sellers-item">
                   <a href="#" class="product-card">
@@ -678,6 +839,12 @@
                       >
                         <span class="icon-favorite-primary"></span>
                       </button>
+                      <!-- Sale -->
+                      <span
+                        class="product-card-badge product-card-badge--ribbon product-card-badge--sale"
+                      >
+                        Sale
+                      </span>
                     </div>
                     <div class="product-card-content">
                       <h6>Aurellia Gold Earrings</h6>
@@ -858,6 +1025,12 @@
                       >
                         <span class="icon-favorite-primary"></span>
                       </button>
+                      <!-- New -->
+                      <span
+                        class="product-card-badge product-card-badge--ribbon product-card-badge--new"
+                      >
+                        New
+                      </span>
                     </div>
                     <div class="product-card-content">
                       <h6>Aurellia Gold Earrings</h6>
@@ -898,6 +1071,14 @@
                   </a>
                 </li>
               </ul>
+
+              <button
+                class="slider-nav slider-nav--next"
+                type="button"
+                aria-label="Next"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>
             </div>
           </div>
         </div>
@@ -908,15 +1089,130 @@
         <div class="container">
           <div class="row section-spacing">
             <div class="section-header col-12">
-              <h2 class="section-header__title">Top Offers</h2>
-              <p class="section-header__subtitle">
-                Discover timeless pieces crafted to complement every style
-              </p>
+              <div class="section-header__content">
+                <h2 class="section-header__title">Top Offers</h2>
+                <p class="section-header__subtitle">
+                  Discover timeless pieces crafted to complement every style
+                </p>
+              </div>
+
+              <div class="section-header__action">
+                <button class="btn-primary">
+                  <span>Know More</span>
+                  <span class="icon-arrow-white"></span>
+                </button>
+              </div>
             </div>
-            <div class="section-header__action">
-              <button class="btn-primary">
-                <span>Know More</span>
-                <span class="icon-arrow-white"></span>
+            <div class="slider col-12">
+              <button
+                class="slider-nav slider-nav--prev"
+                type="button"
+                aria-label="Previous"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>
+
+              <ul class="slider__track top-offers-slider">
+                <li class="slider__item top-offers-item">
+                  <a href="#" class="">
+                    <div class="top-offers-image">
+                      <picture class="oval-image-top-offer">
+                        <source
+                          srcset="/assets/images/products/mens-collection.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/mens-collection.jpg"
+                          alt="offers image"
+                          height="420"
+                          width="640"
+                        />
+                      </picture>
+                      <div class="top-offers-offer-content">
+                        <p class="top-offers-offer">
+                          Flat <span>10%</span> off
+                        </p>
+                        <span class="top-offers-offer-text"
+                          >On All Men Jewellery Collection</span
+                        >
+                      </div>
+                    </div>
+                    <button class="btn-secondary top-offers-button">
+                      <span class="btn-label">Men's Collection</span>
+                      <span class="icon-arrow-primary"></span>
+                    </button>
+                  </a>
+                </li>
+                <li class="slider__item top-offers-item">
+                  <a href="#" class="">
+                    <div class="top-offers-image">
+                      <picture class="oval-image-top-offer">
+                        <source
+                          srcset="
+                            /assets/images/products/womens-collection.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/womens-collection.jpg"
+                          alt="offers image"
+                          height="420"
+                          width="640"
+                        />
+                      </picture>
+                      <div class="top-offers-offer-content">
+                        <p class="top-offers-offer">
+                          Upto <span>50%</span> off
+                        </p>
+                        <span class="top-offers-offer-text"
+                          >On All Women Jewellery Collection</span
+                        >
+                      </div>
+                    </div>
+                    <button class="btn-secondary top-offers-button">
+                      <span class="btn-label">Women's Collection</span>
+                      <span class="icon-arrow-primary"></span>
+                    </button>
+                  </a>
+                </li>
+                <li class="slider__item top-offers-item">
+                  <a href="#" class="">
+                    <div class="top-offers-image">
+                      <picture class="oval-image-top-offer">
+                        <source
+                          srcset="/assets/images/products/kids-collection.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/kids-collection.jpg"
+                          alt="offers image"
+                          height="420"
+                          width="640"
+                        />
+                      </picture>
+                      <div class="top-offers-offer-content">
+                        <p class="top-offers-offer">
+                          Upto <span>30%</span> off
+                        </p>
+                        <span class="top-offers-offer-text"
+                          >On All Kids Jewellery Collection</span
+                        >
+                      </div>
+                    </div>
+                    <button class="btn-secondary top-offers-button">
+                      <span class="btn-label">Kid's Collection</span>
+                      <span class="icon-arrow-primary"></span>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+
+              <button
+                class="slider-nav slider-nav--next"
+                type="button"
+                aria-label="Next"
+              >
+                <span class="icon-arrow-primary"></span>
               </button>
             </div>
           </div>
