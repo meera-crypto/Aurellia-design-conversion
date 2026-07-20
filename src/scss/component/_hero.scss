@@ -19,3 +19,42 @@
     z-index: 1;
   }
 }
+
+.hero {
+  &-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20);
+    padding: rem(20);
+
+    &-left {
+      margin-top: rem(52);
+      position: relative;
+      align-self: stretch; // match height of the tall right image
+      display: flex;
+      flex-direction: column;
+      justify-content: center; // image stays mid-column
+      align-items: center;
+
+      span {
+        position: absolute;
+        top: 0;
+        font-size: rem(60);
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: rem(48);
+  }
+
+  &-description {
+    margin-bottom: rem(48);
+    color: $color-gray-dark;
+  }
+
+  &-section-content {
+    align-items: center;
+  }
+}

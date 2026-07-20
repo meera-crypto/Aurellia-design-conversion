@@ -30,3 +30,19 @@ button {
     }
   }
 }
+
+.slider-nav {
+  border: 1px solid $color-gray-border-light;
+  padding: rem(12);
+  background: $color-white;
+  flex-shrink: 0;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}

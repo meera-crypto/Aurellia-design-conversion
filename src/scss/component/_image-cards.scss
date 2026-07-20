@@ -1,0 +1,54 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-dimension {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oval-image {
+  &-hero {
+    width: rem(444);
+    height: rem(700);
+    border-radius: rem(243);
+    overflow: hidden;
+    display: block;
+  }
+
+  &-hero-second {
+    height: rem(390);
+    width: rem(180);
+    border-radius: rem(92);
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    display: block;
+  }
+
+  &-hero-heading {
+    width: rem(183);
+    height: rem(76);
+    border-radius: rem(38);
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  &-category {
+    height: rem(296);
+    width: rem(222);
+    border-radius: rem(101);
+    overflow: hidden;
+    display: block;
+  }
+
+  &-product {
+    width: rem(350);
+    height: auto;
+    border-top-left-radius: rem(100);
+    overflow: hidden;
+    display: block;
+  }
+}

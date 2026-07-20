@@ -68,7 +68,7 @@
       <nav class="main-navigation py-4">
         <div class="container">
           <div class="row">
-            <div class="col-6 navbar-main">
+            <div class="col-lg-6 navbar-main">
               <ul class="navbar-nav">
                 <!-- Language -->
                 <li class="nav-item dropdown">
@@ -118,7 +118,7 @@
               <p>Free Shipping Over $99</p>
             </div>
 
-            <div class="col-12 col-6">
+            <div class="col-12 col-lg-6">
               <ul class="main-navigation-list">
                 <li class="main-navigation-item">
                   <a href="#" class="main-navigation-link">Rings</a>
@@ -147,12 +147,38 @@
         </div>
       </nav>
       <!--Hero Section-->
-      <section class="background-image">
+      <section class="background-image hero-section">
         <div class="container">
-          <div class="row">
+          <div class="row section-spacing-hero hero-section-content">
             <div class="col-6 py-5">
-              <h1>Latest Collection</h1>
-              <p>
+              <h1 class="hero-title">
+                Latest
+                <picture class="oval-image-hero-heading">
+                  <source
+                    srcset="/assets/images/hero-img-one.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/assets/images/hero-img-one.jpg"
+                    alt="Hero banner icon"
+                    class="image-dimension"
+                  /> </picture
+                ><br />
+
+                <picture class="oval-image-hero-heading mt-4">
+                  <source
+                    srcset="/assets/images/hero-img-two.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/assets/images/hero-img-two.jpg"
+                    alt="Hero banner icon"
+                    class="image-dimension"
+                  />
+                </picture>
+                Collection
+              </h1>
+              <p class="hero-description">
                 Discover timeless pieces crafted to complement every
                 style—whether you're dressing for everyday elegance or
                 celebrating a special moment.
@@ -162,35 +188,736 @@
               </button>
             </div>
             <div class="col-6">
-              <div>
-                <picture class="oval-image-hero-second">
-                  <source
-                    srcset="/assets/images/products/red-earrings.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="/assets/products/red-earrings.jpg"
-                    alt="Hero image product"
-                    height="390"
-                    width="180"
-                    class="image-dimension"
-                  />
-                </picture>
-
-                <picture class="oval-image-hero">
-                  <source
-                    srcset="/assets/images/hero-banner.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="/assets/images/hero-banner.jpg"
-                    alt="Hero image"
-                    height="720"
-                    width="464"
-                    class="image-dimension"
-                  />
-                </picture>
+              <div class="hero-image-container">
+                <div class="hero-image-container-left">
+                  <span class="icon-star"></span>
+                  <picture class="oval-image-hero-second">
+                    <source
+                      srcset="/assets/images/products/red-earrings.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/products/red-earrings.jpg"
+                      alt="Hero image product"
+                      height="390"
+                      width="180"
+                      class="image-dimension"
+                    />
+                  </picture>
+                </div>
+                <div class="hero-image-container-right">
+                  <picture class="oval-image-hero">
+                    <source
+                      srcset="/assets/images/hero-banner.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/hero-banner.jpg"
+                      alt="Hero image"
+                      height="720"
+                      width="464"
+                      class="image-dimension"
+                    />
+                  </picture>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Marquee-->
+      <div class="marquee">
+        <div class="marquee-content">
+          <span class="icon-star"></span>
+          <span class="marquee-text"
+            >Enjoy up to 50% on our Superium Collection</span
+          >
+          <span class="icon-star"></span>
+          <span class="marquee-text">Lastest collection for this season </span>
+          <span class="icon-star"></span>
+          <span class="marquee-text"
+            >Enjoy up to 50% on our Superium Collection</span
+          >
+          <span class="icon-star"></span>
+          <span class="marquee-text">Lastest collection for this season </span>
+          <span class="icon-star"></span>
+          <span class="marquee-text"
+            >Enjoy up to 50% on our Superium Collection</span
+          >
+          <span class="icon-star"></span>
+        </div>
+      </div>
+      <!--Category Section-->
+      <section class="category-section">
+        <div class="container">
+          <div class="row section-spacing">
+            <div class="section-header col-12">
+              <div class="section-header__content col-lg-6">
+                <h2 class="section-header__title">Shop By Category</h2>
+                <p class="section-header__subtitle">
+                  Discover timeless pieces crafted to complement every style
+                </p>
+              </div>
+              <div class="section-header__action">
+                <button class="btn-primary">
+                  <span>View All</span>
+                  <span class="icon-arrow-white"></span>
+                </button>
+              </div>
+            </div>
+            <div class="slider">
+              <!--<button
+                class="slider-nav slider-nav--prev"
+                type="button"
+                aria-label="Previous"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>-->
+
+              <div class="slider__track col-12">
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/necklace.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/necklace.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Necklaces</span>
+                </a>
+
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/earrings.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/earrings.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Earrings</span>
+                </a>
+
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/bracelets.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/bracelets.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Bracelets</span>
+                </a>
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/rings.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/rings.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Rings</span>
+                </a>
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/necklace.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/necklace.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Chains</span>
+                </a>
+                <a href="#" class="slider__item category-item">
+                  <picture class="oval-image-category">
+                    <source
+                      srcset="/assets/images/category/pendants.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="/assets/images/category/pendants.jpg"
+                      alt=""
+                      class="image-dimension"
+                    />
+                  </picture>
+                  <span>Pendants</span>
+                </a>
+              </div>
+
+              <!--<button
+                class="slider-nav slider-nav--next"
+                type="button"
+                aria-label="Next"
+              >
+                <span class="icon-arrow-primary"></span>
+              </button>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Best Sellers Section-->
+      <section class="best-sellers-section">
+        <div class="container">
+          <div class="row section-spacing">
+            <div class="section-header col-12">
+              <div class="section-header__content">
+                <h2 class="section-header__title">Best Sellers</h2>
+                <p class="section-header__subtitle">
+                  Discover timeless pieces crafted to complement every style
+                </p>
+              </div>
+              <div class="section-header__action">
+                <button class="btn-primary">
+                  <span>Know More</span>
+                  <span class="icon-arrow-white"></span>
+                </button>
+              </div>
+            </div>
+            <div class="slider col-12">
+              <ul class="slider__track best-seller-slider">
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="/assets/images/products/red-earrings.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/red-earrings.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span> $100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-1" checked />
+                          <span
+                            class="product-selector__swatch gold-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-1" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="
+                            /assets/images/products/heritage-necklace.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/heritage-necklace.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+
+                      <!-- Sale -->
+                      <span class="product-card-badge product-card-badge--sale">
+                        Sale
+                      </span>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span> $100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-2" checked />
+                          <span
+                            class="product-selector__swatch antique-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-2" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="/assets/images/products/red-bangle.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/red-bangle.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <div>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                        </div>
+
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span> $100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-3" checked />
+                          <span
+                            class="product-selector__swatch light-gold-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-3" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="
+                            /assets/images/products/rose-gold-bracelet.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/rose-gold-bracelet.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <div>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                        </div>
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span>$100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-4" checked />
+                          <span
+                            class="product-selector__swatch ruby-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-4" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending collection Section-->
+      <section class="best-sellers-section">
+        <div class="container">
+          <div class="row section-spacing">
+            <div class="section-header col-12">
+              <div class="section-header__content">
+                <h2 class="section-header__title">Trending Collection</h2>
+                <p class="section-header__subtitle">
+                  Discover timeless pieces crafted to complement every style
+                </p>
+              </div>
+              <div class="section-header__action">
+                <button class="btn-primary">
+                  <span>Know More</span>
+                  <span class="icon-arrow-white"></span>
+                </button>
+              </div>
+            </div>
+            <div class="slider col-12">
+              <ul class="slider__track best-seller-slider">
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="/assets/images/products/red-earrings.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/red-earrings.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span> $100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-1" checked />
+                          <span
+                            class="product-selector__swatch gold-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-1" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="
+                            /assets/images/products/heritage-necklace.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/heritage-necklace.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+
+                      <!-- Sale -->
+                      <span class="product-card-badge product-card-badge--sale">
+                        Sale
+                      </span>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="icon-rating-star"></span>
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span> $100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-2" checked />
+                          <span
+                            class="product-selector__swatch antique-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-2" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="/assets/images/products/red-bangle.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/red-bangle.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <div>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                        </div>
+
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span> $100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-3" checked />
+                          <span
+                            class="product-selector__swatch light-gold-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-3" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+                <li class="slider__item best-sellers-item">
+                  <a href="#" class="product-card">
+                    <div class="product-card-image">
+                      <picture class="oval-image-product">
+                        <source
+                          srcset="
+                            /assets/images/products/rose-gold-bracelet.webp
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/assets/images/products/rose-gold-bracelet.jpg"
+                          alt="Product image"
+                        />
+                      </picture>
+                      <button
+                        class="product-card-badge product-card-badge--favorite"
+                        aria-label="Add to favourites"
+                      >
+                        <span class="icon-favorite-primary"></span>
+                      </button>
+                    </div>
+                    <div class="product-card-content">
+                      <h6>Aurellia Gold Earrings</h6>
+                      <div class="product-card-rating">
+                        <div>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                          <span class="icon-rating-star"></span>
+                        </div>
+                        <span class="product-card-rating-text"
+                          >(5.6k rated)</span
+                        >
+                      </div>
+                      <p class="product-card-price">
+                        <span>$100.00</span> $60.00
+                      </p>
+                      <fieldset class="product-card-selector">
+                        <legend class="visually-hidden">
+                          Select product color
+                        </legend>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-4" checked />
+                          <span
+                            class="product-selector__swatch ruby-product"
+                          ></span>
+                        </label>
+
+                        <label class="product-selector">
+                          <input type="radio" name="product-color-4" />
+                          <span
+                            class="product-selector__swatch silver-product"
+                          ></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top  Offers Section-->
+      <section class="top-offers-section">
+        <div class="container">
+          <div class="row section-spacing">
+            <div class="section-header col-12">
+              <h2 class="section-header__title">Top Offers</h2>
+              <p class="section-header__subtitle">
+                Discover timeless pieces crafted to complement every style
+              </p>
+            </div>
+            <div class="section-header__action">
+              <button class="btn-primary">
+                <span>Know More</span>
+                <span class="icon-arrow-white"></span>
+              </button>
             </div>
           </div>
         </div>
@@ -489,8 +1216,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="copyright-content">
+        <div class="container">
+          <div class="copyright-content row">
             <div class="col-lg-6 col-12">
               <p>
                 2025

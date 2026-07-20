@@ -1,0 +1,160 @@
+.product {
+  &-card {
+    &:hover {
+      text-decoration: none;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: rem(8);
+      margin-top: rem(12);
+
+      h6 {
+        margin-bottom: 0;
+      }
+    }
+    &-rating {
+      color: $color-gray-darkest;
+      font-size: rem(14);
+      margin-bottom: rem(12);
+      display: flex;
+      align-items: center;
+
+      &-text {
+        margin-left: rem(8);
+      }
+    }
+    &-price {
+      font-size: rem(18);
+      font-weight: 500;
+
+      span {
+        color: $color-brand-primary;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.product-card-selector {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  border: 0;
+  margin: 0;
+  padding: rem(4);
+}
+
+.product-selector {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  &__swatch {
+    display: block;
+    width: rem(39);
+    height: rem(15);
+    border: rem(2) solid transparent;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+  }
+
+  input:checked + .product-selector__swatch {
+    outline: rem(2) solid $color-gray-dark;
+    outline-offset: rem(2);
+  }
+}
+
+.gold-product {
+  background-color: $color-gold-product;
+}
+
+.silver-product {
+  background-color: $color-silver-product;
+}
+
+.antique-product {
+  background-color: $color-antique-product;
+}
+
+.ruby-product {
+  background-color: $color-ruby-product;
+}
+
+.light-gold-product {
+  background-color: $color-light-gold-product;
+}
+
+.icon-rating-star {
+  font-size: rem(20);
+}
+
+.product-card {
+  &-image {
+    position: relative;
+  }
+
+  &-badge {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--favorite {
+      top: rem(20);
+      right: rem(20);
+      padding: rem(10);
+      font-size: rem(24);
+
+      border: none;
+      border-radius: 50%;
+      background: $color-white;
+      color: $color-brand-primary;
+      cursor: pointer;
+      box-shadow: 0 rem(4) rem(12) rgba(0, 0, 0, 0.12);
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+
+    &--sale {
+      position: absolute;
+
+      /* Position before rotation */
+      top: rem(42);
+      left: rem(-38);
+
+      width: rem(190);
+      height: rem(30);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: $color-crimson;
+      color: $color-white;
+
+      font-size: rem(14);
+      font-weight: 500;
+      line-height: 1;
+
+      transform: rotate(-45deg);
+      z-index: 2;
+    }
+  }
+}
+
+.product-card-image {
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,32 @@
+.heading-spacing {
+  margin-bottom: rem(12);
+}
+
+.section-spacing {
+  padding: rem(80) 0;
+
+  &-hero {
+    padding: rem(32) 0;
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: rem(16);
+
+  &__title {
+    margin-bottom: rem(12);
+  }
+
+  &__subtitle {
+    color: $color-gray-dark;
+    margin-bottom: rem(36);
+  }
+
+  &__action {
+    flex-shrink: 0;
+  }
+}
