@@ -40,4 +40,18 @@
 
 .top-offers-section {
   border-bottom: 1px solid $color-gray-border-light;
+  overflow-x: clip;
+
+  .slider {
+    min-width: 0;
+  }
+
+  .top-offers-slider {
+    width: calc(100% + (100vw - 100%) / 2);
+
+    overflow-x: auto;
+  }
+  .slider-nav {
+    z-index: 5;
+  }
 }
