@@ -11,8 +11,8 @@
 
   &-list {
     position: absolute;
-    width: rem(330);
-    height: rem(410);
+    width: rem(370);
+    height: rem(450);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -22,8 +22,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: rem(320);
-    height: rem(410);
+    width: rem(370);
+    height: rem(450);
     margin: 0;
     padding: 0;
 
@@ -73,7 +73,7 @@
 
 .masterpiece-carousel-viewport {
   position: relative;
-  width: calc((#{rem(285)} * 3) + (#{rem(24)} * 2)); // 3 cards + 2 gaps
+  width: calc((#{rem(370)} * 3) + (#{rem(24)} * 2)); // 3 cards + 2 gaps
   max-width: 100%;
   height: rem(400);
   margin: 0 auto;
@@ -82,11 +82,11 @@
 
 .carousel-nav {
   &-prev {
-    transform: translateX(400%);
+    transform: translateX(300%);
   }
 
   &-next {
-    transform: translateX(-400%);
+    transform: translateX(-300%);
   }
 }
 
