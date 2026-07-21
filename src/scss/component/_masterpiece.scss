@@ -1,0 +1,96 @@
+.masterpiece-section {
+  position: relative;
+}
+
+.masterpiece-carousel {
+  position: relative;
+  width: 100%;
+  margin-top: rem(80);
+  min-height: rem(400);
+  overflow: hidden;
+}
+
+.masterpiece-carousel-list {
+  position: absolute;
+  width: rem(330);
+  height: rem(410);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.masterpiece-carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(320);
+  height: rem(410);
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  picture,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+
+.masterpiece-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba($color-black, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__image {
+    max-width: min(90vw, rem(720));
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: rem(8);
+    box-shadow: 0 rem(12) rem(40) rgba($color-black, 0.45);
+  }
+}
+
+.masterpiece-carousel-viewport {
+  position: relative;
+  width: calc((#{rem(285)} * 3) + (#{rem(24)} * 2)); // 3 cards + 2 gaps
+  max-width: 100%;
+  height: rem(400);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-nav-prev {
+  transform: translateX(400%);
+}
+
+.carousel-nav-next {
+  transform: translateX(-400%);
+}
+
+.finger-rings-button {
+  font-size: rem(28);
+  margin-top: rem(40);
+}
