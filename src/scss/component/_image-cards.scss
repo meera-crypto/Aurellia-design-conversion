@@ -120,4 +120,12 @@ img {
     overflow: hidden;
     display: block;
   }
+
+  &-testimonial {
+    width: rem(193);
+    height: rem(275);
+    border-radius: rem(121);
+    overflow: hidden;
+    display: block;
+  }
 }

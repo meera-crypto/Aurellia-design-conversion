@@ -1,4 +1,5 @@
 .combo-offers-section {
+  border-bottom: 1px solid $color-gray-border-light;
   .col-lg-6 {
     min-width: 0;
   }
@@ -43,9 +44,3 @@
     z-index: 2;
   }
 }
-
-// .combo-offers-image {
-//   display: flex;
-//   align-items: center;
-//   gap: rem(16);
-// }
