@@ -27,14 +27,12 @@
 }
 
 .combo-offers-image {
+  position: relative;
+  display: inline-block;
+
   span {
     font-size: rem(63);
   }
-}
-
-.combo-offers-image {
-  position: relative;
-  display: inline-block;
 
   .icon-star {
     position: absolute;

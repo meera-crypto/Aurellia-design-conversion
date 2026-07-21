@@ -9,6 +9,7 @@ button {
   padding: 0;
 }
 
+//primary button
 .btn-primary {
   background-color: $color-brand-primary;
   color: $color-background-primary;
@@ -20,6 +21,7 @@ button {
   }
 }
 
+//secondary button
 .btn-secondary {
   color: $color-dark;
   font-size: rem(20);
@@ -31,6 +33,7 @@ button {
   }
 }
 
+//slider buttons
 .slider {
   position: relative;
 

@@ -1,36 +1,39 @@
-.testimonial-content {
-  display: flex;
-  align-items: center;
-}
-
-.testimonial-image {
-  position: relative;
-  z-index: 1000;
-  flex-shrink: 0;
-}
-
-.testimonial-text {
-  flex: 1;
-  min-width: 0;
-
-  margin-left: rem(-80);
-  padding: rem(56) rem(46) rem(56) rem(100);
-  background-color: rgba($color-accent, 0.5);
-  border: 1px solid $color-brand-secondary;
-  border-top-right-radius: rem(100);
-
-  p {
-    margin-top: rem(24);
-  }
-}
-
-.testimonial-rating {
-  display: flex;
-  align-items: center;
-  gap: rem(4);
-
+.testimonial {
   &-text {
-    font-size: rem(14);
+    flex: 1;
+    min-width: 0;
+
+    margin-left: rem(-80);
+    padding: rem(56) rem(46) rem(56) rem(100);
+    background-color: rgba($color-accent, 0.5);
+    border: 1px solid $color-brand-secondary;
+    border-top-right-radius: rem(100);
+
+    p {
+      margin-top: rem(24);
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &-image {
+    position: relative;
+    z-index: 1000;
+    flex-shrink: 0;
+  }
+
+  &-rating {
+    display: flex;
+    align-items: center;
+    gap: rem(4);
+
+    &-text {
+      font-size: rem(14);
+      margin-left: rem(4);
+    }
   }
 }
 
@@ -54,9 +57,9 @@
       width: 40%;
       flex-shrink: 0;
     }
-  }
-}
 
-.testimonial-slider-container {
-  padding: rem(56) 0;
+    &-container {
+      padding: rem(56) 0;
+    }
+  }
 }
