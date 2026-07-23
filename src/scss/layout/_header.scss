@@ -85,10 +85,17 @@ header {
   }
 
   .offcanvas-title {
-    font-family: $font-primary;
-    font-size: rem(24);
     color: $color-brand-primary;
     margin: 0;
+  }
+  .offcanvas-subtitle {
+    color: $color-brand-primary;
+    margin-top: rem(32);
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -113,17 +120,23 @@ header {
   display: flex;
   flex-direction: column;
   gap: rem(4);
+}
 
-  &--categories {
-    display: none;
-    margin-top: rem(24) !important;
-    padding-top: rem(24) !important;
-    border-top: 1px solid $color-gray-border;
+.header-menu-categories {
+  display: none;
+  margin-top: rem(24);
+  padding-top: rem(24);
+  border-top: 1px solid $color-gray-border;
 
-    @include mobile-lg() {
-      display: flex;
-    }
+  @include mobile-lg() {
+    display: block;
   }
+}
+
+.header-menu-heading {
+  margin: 0 0 rem(8);
+  color: $color-brand-primary;
+  line-height: 1.3;
 }
 
 .header-menu-link {

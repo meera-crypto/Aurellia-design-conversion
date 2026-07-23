@@ -54,6 +54,21 @@ nav {
     @include tablet-md() {
       display: none;
     }
+
+    &--offcanvas {
+      display: none;
+      margin-top: auto;
+      padding-top: rem(24);
+      border-top: 1px solid $color-gray-border;
+
+      @include tablet-md() {
+        display: flex;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &-nav {
