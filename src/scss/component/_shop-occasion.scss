@@ -5,10 +5,16 @@
 .shop-by-occasion {
   &-image {
     position: relative;
+    display: flex;
 
     img {
       padding: rem(20);
       border-radius: rem(200);
+    }
+
+    @include tablet-lg() {
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -17,18 +23,32 @@
     top: 0;
     right: rem(60);
     font-size: rem(60);
+
+    @include tablet-md() {
+      right: rem(24);
+      font-size: rem(48);
+    }
+
+    @include mobile-lg() {
+      right: rem(12);
+      font-size: rem(36);
+    }
   }
 
   &-text-content {
     position: sticky;
     top: rem(100);
+
+    @include tablet-md() {
+      position: static;
+    }
   }
 
   &-content {
     p {
       color: $color-gray-dark;
       margin-top: rem(24);
-      margin-bottom: rem(32);
+      margin-bottom: rem(48);
     }
   }
 }
@@ -38,6 +58,7 @@
     margin: rem(20) 0;
   }
 }
+
 .shop-by-occasion {
   &-scroll {
     display: flex;
@@ -50,6 +71,10 @@
 
     scrollbar-width: none;
 
+    @include tablet-md() {
+      padding-top: rem(40);
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -58,5 +83,11 @@
   &-row {
     scroll-snap-align: start;
     flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+
+    @include tablet-md() {
+      justify-content: center;
+    }
   }
 }

@@ -5,8 +5,20 @@
 .section-spacing {
   padding: rem(80) 0;
 
+  @include tablet-md() {
+    padding: rem(56) 0;
+  }
+
+  @include mobile-lg() {
+    padding: rem(40) 0;
+  }
+
   &-hero {
     padding: rem(32) 0;
+
+    @include mobile-lg() {
+      padding: rem(24) 0;
+    }
   }
 }
 
@@ -14,8 +26,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
-  gap: rem(16);
+  // flex-wrap: wrap;
+  // gap: rem(16);
 
   &__title {
     margin-bottom: rem(12);
@@ -24,9 +36,19 @@
   &__subtitle {
     color: $color-gray-dark;
     margin-bottom: rem(36);
+
+    @include mobile-lg() {
+      margin-bottom: rem(24);
+    }
   }
 
   &__action {
     flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @include mobile-lg() {
+      justify-content: flex-start;
+    }
   }
 }

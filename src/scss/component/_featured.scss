@@ -3,16 +3,21 @@
     margin-bottom: rem(24);
     border-bottom: solid rem(1) $color-gray-border-light;
     padding-bottom: rem(24);
+
+    @include tablet-md() {
+      margin-top: rem(32);
+    }
   }
+
   &-content {
     p {
       margin-bottom: rem(48);
       color: $color-gray-dark;
+
+      @include mobile-lg() {
+        margin-bottom: rem(24);
+      }
     }
-  }
-  &-images {
-    display: flex;
-    gap: rem(20);
   }
 }
 
@@ -27,5 +32,23 @@
     text-align: center;
     margin-top: rem(20);
     color: $color-gray-dark;
+  }
+}
+
+.featured-collection-images {
+  display: flex;
+  gap: rem(20);
+  align-items: flex-end;
+  justify-content: start;
+
+  @include tablet-md() {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(16);
+  }
+
+  @include mobile-lg() {
+    flex-direction: column;
+    align-items: center;
   }
 }

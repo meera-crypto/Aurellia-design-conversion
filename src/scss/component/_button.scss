@@ -19,12 +19,22 @@ button {
   &:hover {
     background-color: #680020;
   }
+
+  @include mobile-lg() {
+    font-size: rem(16);
+    padding: rem(12) rem(24);
+    margin-bottom: rem(24);
+  }
 }
 
 //secondary button
 .btn-secondary {
   color: $color-dark;
   font-size: rem(20);
+
+  @include mobile-lg() {
+    font-size: rem(18);
+  }
   &:hover {
     .btn-label {
       text-decoration: underline;

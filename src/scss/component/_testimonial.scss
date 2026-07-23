@@ -9,6 +9,21 @@
     border: 1px solid $color-brand-secondary;
     border-top-right-radius: rem(100);
 
+    @include desktop-sm() {
+      margin-left: rem(-48);
+      padding: rem(40) rem(32) rem(40) rem(64);
+    }
+
+    @include tablet-md() {
+      margin-left: rem(-40);
+      padding: rem(32) rem(24) rem(32) rem(56);
+    }
+
+    @include mobile-lg() {
+      margin-left: rem(-28);
+      padding: rem(24) rem(16) rem(24) rem(40);
+    }
+
     p {
       margin-top: rem(24);
     }
@@ -40,13 +55,8 @@
 .testimonial-section {
   overflow-x: clip;
 
-  .slider {
-    min-width: 0;
-  }
-
   .testimonial-slider {
     width: calc(100% + (100vw - 100%) / 2);
-    overflow-x: auto;
 
     &::after {
       content: "";
@@ -55,11 +65,40 @@
 
     .testimonial-item {
       width: 40%;
-      flex-shrink: 0;
+      min-width: rem(520);
+
+      @include desktop-sm() {
+        width: 55%;
+        min-width: rem(420);
+      }
+
+      @include tablet-md() {
+        width: 75%;
+        min-width: rem(360);
+      }
+
+      @include mobile-lg() {
+        width: 90%;
+      }
+
+      @include mobile-md() {
+        .testimonial-image {
+          display: none;
+        }
+
+        .testimonial-text {
+          margin-left: 0;
+        }
+      }
     }
 
     &-container {
+      overflow: visible;
       padding: rem(56) 0;
+
+      @include mobile-lg() {
+        padding: rem(32) 0;
+      }
     }
   }
 }

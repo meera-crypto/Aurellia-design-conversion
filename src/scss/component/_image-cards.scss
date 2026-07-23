@@ -1,5 +1,7 @@
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -31,57 +33,69 @@ img {
   }
 }
 
-.image-dimension {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .oval-image {
   &-hero {
-    width: rem(444);
+    max-width: rem(444);
     height: rem(700);
     border-radius: rem(243);
     overflow: hidden;
     display: block;
+
+    @include tablet-lg {
+      height: rem(500);
+    }
+    @include mobile-sm {
+      height: rem(400);
+    }
   }
 
   &-hero-second {
     height: rem(390);
-    width: rem(180);
+    max-width: rem(180);
     border-radius: rem(92);
     border-bottom-right-radius: 0;
     overflow: hidden;
     display: block;
+
+    @include tablet-lg {
+      height: rem(290);
+    }
+    @include mobile-sm {
+      height: rem(190);
+    }
   }
 
   &-hero-heading {
-    width: rem(183);
+    width: 100%;
+    max-width: rem(183);
     height: rem(76);
     border-radius: rem(38);
     overflow: hidden;
-    display: inline-flex;
+    display: inline-block;
   }
 
   &-category {
     height: rem(296);
-    width: rem(222);
+    aspect-ratio: 222 / 296;
+    max-width: rem(222);
     border-radius: rem(101);
     overflow: hidden;
     display: block;
   }
 
   &-product-occasion {
-    width: rem(350);
-    height: rem(400);
+    width: 100%;
+    max-width: rem(350);
+    aspect-ratio: 350 / 400;
     border-top-left-radius: rem(100);
     overflow: hidden;
     display: block;
   }
 
   &-top-offer {
-    width: rem(640);
+    max-width: rem(640);
     height: rem(420);
+    aspect-ratio: 640 / 420;
     border-top-left-radius: rem(100);
     overflow: hidden;
     display: block;
@@ -89,7 +103,8 @@ img {
 
   &-featured-collection {
     height: rem(390);
-    width: rem(230);
+    max-width: rem(230);
+    width: 100%;
     border-radius: rem(180);
     overflow: hidden;
     display: block;
@@ -97,7 +112,8 @@ img {
 
   &-featured-collection-secondary {
     height: rem(470);
-    width: rem(375);
+    max-width: rem(375);
+    width: 100%;
     border-top-right-radius: rem(100);
     overflow: hidden;
     display: block;
@@ -105,15 +121,15 @@ img {
 
   &-shop-by-occasion {
     height: rem(521);
-    width: rem(359);
+    max-width: rem(359);
     border-radius: rem(200);
     overflow: hidden;
     display: block;
   }
 
   &-combo-offer {
-    width: rem(691);
-    max-width: 100%;
+    width: 100%;
+    max-width: rem(691);
     height: auto;
     aspect-ratio: 691 / 647;
     border-top-right-radius: rem(100);
@@ -122,7 +138,7 @@ img {
   }
 
   &-testimonial {
-    width: rem(193);
+    max-width: rem(193);
     height: rem(275);
     border-radius: rem(121);
     overflow: hidden;

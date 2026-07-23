@@ -1,10 +1,16 @@
 .hero {
   &-image-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: rem(20);
-    padding: rem(20);
+    padding: rem(20) 0;
+
+    @include mobile-lg() {
+      gap: rem(12);
+      padding: rem(12) 0;
+      justify-content: center;
+    }
 
     &-left {
       margin-top: rem(52);
@@ -12,27 +18,57 @@
       align-self: stretch; // match height of the tall right image
       display: flex;
       flex-direction: column;
-      justify-content: center; // image stays mid-column
+      justify-content: center;
       align-items: center;
 
       span {
         position: absolute;
         top: 0;
         font-size: rem(60);
+
+        @include mobile-lg() {
+          font-size: rem(36);
+          top: rem(-20);
+        }
       }
     }
   }
 
   &-title {
     margin-bottom: rem(48);
+
+    @include mobile-lg() {
+      margin-bottom: rem(24);
+      text-align: center;
+    }
   }
 
   &-description {
     margin-bottom: rem(48);
     color: $color-gray-dark;
+
+    @include mobile-lg() {
+      margin-bottom: rem(24);
+      text-align: center;
+    }
   }
 
   &-section-content {
     align-items: center;
+  }
+}
+
+.oval-image-hero-heading {
+  @include desktop-sm() {
+    display: none;
+  }
+}
+
+.hero-content {
+  @include mobile-lg() {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

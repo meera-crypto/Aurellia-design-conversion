@@ -18,7 +18,17 @@ header {
     padding: 0 !important;
     margin-bottom: 0 !important;
     display: flex;
+    flex-wrap: wrap;
     gap: rem(36);
+
+    @include tablet-md() {
+      justify-content: center;
+      gap: rem(20);
+    }
+
+    @include mobile-lg() {
+      gap: rem(12) rem(16);
+    }
   }
 }
 
@@ -30,15 +40,52 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: rem(24);
+
+  @include mobile-lg() {
+    gap: rem(16);
+  }
 }
 
 .header-menu {
   align-items: center;
   padding: rem(8) 0;
+
+  @include tablet-md() {
+    .header-logo,
+    .header-actions {
+      width: auto;
+      flex: 1 1 auto;
+    }
+
+    .header-nav {
+      order: 3;
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
+      margin-top: rem(8);
+
+      @include tablet-lg() {
+        display: none;
+      }
+    }
+  }
 }
 
 .header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: auto;
+    max-width: rem(140);
+    height: auto;
+
+    @include mobile-lg() {
+      max-width: rem(120);
+    }
+  }
+  @include tablet-md() {
+    justify-content: flex-start;
+  }
 }

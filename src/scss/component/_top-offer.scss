@@ -23,14 +23,27 @@
     line-height: 1.1;
     color: $color-offers-text;
 
+    @include mobile-lg() {
+      font-size: rem(28);
+    }
+
     span {
       font-size: rem(52);
+
+      @include mobile-lg() {
+        font-size: rem(36);
+      }
     }
   }
 
   &-offer-text {
     color: $color-gray-darkest;
     margin-top: rem(8);
+    text-align: center;
+
+    @include mobile-lg() {
+      font-size: rem(14);
+    }
   }
 
   &-button {
@@ -42,13 +55,8 @@
   border-bottom: 1px solid $color-gray-border-light;
   overflow-x: clip;
 
-  .slider {
-    min-width: 0;
-  }
-
   .top-offers-slider {
     width: calc(100% + (100vw - 100%) / 2);
-    overflow-x: auto;
 
     &::after {
       content: "";

@@ -1,23 +1,21 @@
 .combo-offers-section {
   border-bottom: 1px solid $color-gray-border-light;
+  overflow-x: clip;
+
   .col-lg-6 {
     min-width: 0;
   }
 
-  .slider {
-    min-width: 0;
-    width: 100%;
-    overflow: hidden;
-  }
-
   .slider__item {
     width: calc(50% - #{rem(12)});
+
+    @include mobile-lg() {
+      width: 80%;
+    }
   }
 
   .oval-image-product-occasion {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 350 / 400;
+    max-width: none;
   }
 }
 
@@ -28,10 +26,23 @@
 
 .combo-offers-image {
   position: relative;
-  display: inline-block;
+
+  max-width: 100%;
+
+  @include tablet-lg() {
+    margin-bottom: rem(24);
+  }
 
   span {
     font-size: rem(63);
+
+    @include tablet-md() {
+      font-size: rem(48);
+    }
+
+    @include mobile-lg() {
+      font-size: rem(36);
+    }
   }
 
   .icon-star {
@@ -40,5 +51,13 @@
     right: rem(-60);
     transform: translateY(-70%);
     z-index: 2;
+
+    @include tablet-md() {
+      right: rem(-16);
+    }
+
+    @include mobile-lg() {
+      right: rem(8);
+    }
   }
 }

@@ -7,7 +7,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: rem(44);
+
+  @include desktop-md() {
+    gap: rem(24);
+  }
+
+  @include tablet-lg() {
+    gap: rem(20);
+    justify-content: center;
+  }
 }
 
 .main-navigation-item,
@@ -29,7 +39,13 @@ nav {
   &-main {
     display: flex;
     justify-content: start;
+    align-items: center;
     gap: rem(24);
+    flex-wrap: wrap;
+
+    @include tablet-md() {
+      display: none;
+    }
   }
 
   &-nav {

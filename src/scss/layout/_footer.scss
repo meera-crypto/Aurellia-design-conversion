@@ -1,36 +1,61 @@
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid $color-gray-border-light;
-  padding: rem(20) 0;
+.footer {
+  &-logo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $color-gray-border-light;
+    padding: rem(20) 0;
+
+    img {
+      width: auto;
+      max-width: rem(160);
+      height: auto;
+    }
+  }
+
+  &-experience {
+    background-color: $color-background-secondary;
+    padding: rem(80) 0;
+
+    @include tablet-md() {
+      padding: rem(56) 0;
+    }
+
+    @include mobile-lg() {
+      padding: rem(40) 0;
+    }
+
+    &-text {
+      text-align: center;
+      margin-bottom: rem(48);
+    }
+
+    &-icons {
+      text-align: left;
+      padding: rem(20) 0;
+    }
+  }
 }
 
-.footer-experience {
-  background-color: $color-background-secondary;
-  padding: rem(80) 0;
-}
+.experience {
+  &-content {
+    @include tablet-md() {
+      margin-bottom: rem(24);
+    }
 
-.footer-experience-text p {
-  color: $color-gray;
+    p {
+      font-size: rem(14);
+      line-height: 1.7;
+    }
+  }
+
+  &-footer-btn {
+    margin-top: rem(16);
+    margin-bottom: rem(20);
+  }
 }
 
 .icon-experience {
   font-size: rem(56);
-}
-
-.footer-experience-icons {
-  text-align: left;
-  padding: rem(20) 0;
-}
-
-.experience-content p {
-  font-size: rem(14);
-  line-height: 1.7;
-}
-
-.experience-footer-btn {
-  margin-top: rem(16);
-  margin-bottom: rem(20);
 }
 
 .newsletter {
@@ -72,6 +97,7 @@
     -webkit-appearance: none;
     width: rem(20);
     height: rem(20);
+    flex-shrink: 0;
     background-color: transparent;
     border: 1px solid $color-brand-primary; // Your desired border color
   }
@@ -83,8 +109,14 @@
 
 .page-links-column {
   display: flex;
+  justify-content: flex-start;
   flex-direction: row;
-  gap: rem(80);
+  gap: rem(40);
+
+  @include tablet-md() {
+    width: 100%;
+    margin-block: rem(32);
+  }
 
   h5 {
     margin-bottom: rem(24);
@@ -99,6 +131,8 @@
   display: flex;
   font-family: $font-primary;
   align-items: center;
+  flex-wrap: wrap;
+  gap: rem(8);
 
   p {
     font-size: rem(22);
@@ -119,6 +153,9 @@
 .social-links {
   border-bottom: 1px solid $color-gray-border-light;
   border-top: 1px solid $color-gray-border-light;
+  align-items: center;
+  padding: rem(16) 0;
+  row-gap: rem(16);
 }
 
 .social-media-links {
@@ -129,7 +166,13 @@
 .copyright-policy {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: rem(64);
+
+  @include mobile-lg() {
+    justify-content: flex-start;
+    gap: rem(16) rem(24);
+  }
 }
 
 .copyright-brand-link {
@@ -138,11 +181,12 @@
 
 .copyright-content {
   padding: rem(40) 0 rem(80) 0;
-}
+  align-items: center;
+  row-gap: rem(16);
 
-.footer-experience-text {
-  text-align: center;
-  margin-bottom: rem(48);
+  @include mobile-lg() {
+    padding: rem(24) 0 rem(40) 0;
+  }
 }
 
 .footer-links-newsletter {
@@ -150,26 +194,29 @@
   justify-content: flex-start;
 }
 
-.copyright-content {
-  display: flex;
-  align-items: center;
-}
-
 .payment-methods {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: rem(16);
   flex-wrap: wrap;
-}
+  gap: rem(16);
 
-.social-links {
-  display: flex;
-  align-items: center;
-  padding: rem(16) 0;
+  @include mobile-lg() {
+    justify-content: flex-start;
+  }
+
+  img {
+    width: rem(40);
+    height: rem(20);
+    object-fit: contain;
+  }
 }
 
 .customer-service-column-footer {
   display: flex;
   justify-content: start;
+
+  @include tablet-md() {
+    margin-block: rem(32);
+  }
 }

@@ -1,3 +1,19 @@
 .best-sellers-section {
   border-bottom: 1px solid $color-gray-border-light;
+
+  .slider__item {
+    width: calc(25% - #{rem(18)});
+
+    @include tablet-md() {
+      width: calc(50% - #{rem(12)});
+    }
+
+    @include mobile-sm() {
+      width: 70%;
+    }
+  }
+
+  .oval-image-product-occasion {
+    max-width: none;
+  }
 }
