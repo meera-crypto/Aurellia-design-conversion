@@ -18,6 +18,10 @@ nav {
     gap: rem(20);
     justify-content: center;
   }
+
+  @include mobile-lg() {
+    display: none;
+  }
 }
 
 .main-navigation-item,
@@ -30,9 +34,13 @@ nav {
 .main-navigation {
   position: sticky;
   top: 0;
-  z-index: 1050;
+  z-index: 1020;
   border-bottom: 1px solid $color-gray-border;
   width: 100%;
+
+  @include mobile-lg() {
+    display: none;
+  }
 }
 
 .navbar {

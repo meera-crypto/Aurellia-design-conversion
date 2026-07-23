@@ -56,8 +56,77 @@
               <a href="#" class="action-cart"
                 ><span class="icon icon-cart"></span
               ></a>
+              <button
+                class="header-hamburger"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#headerMenu"
+                aria-controls="headerMenu"
+                aria-label="Open menu"
+              >
+                <span class="header-hamburger-line"></span>
+                <span class="header-hamburger-line"></span>
+                <span class="header-hamburger-line"></span>
+              </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end header-offcanvas"
+        tabindex="-1"
+        id="headerMenu"
+        aria-labelledby="headerMenuLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="headerMenuLabel">Menu</h2>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close menu"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">About Us</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Contact Us</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Shop</a>
+            </li>
+          </ul>
+
+          <ul class="header-menu-list header-menu-list--categories">
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Rings</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Earrings</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Pendants</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Necklaces</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Bracelets</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Bangles</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Chains</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -2257,7 +2326,7 @@
       <div class="social-copyright">
         <div class="container">
           <div class="social-links row">
-            <div class="col-lg-6 col-12">
+            <div class="col-md-6 col-12">
               <div class="social-media">
                 <p>Social :</p>
                 <ul class="social-media-links">
@@ -2284,7 +2353,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 col-12">
+            <div class="col-md-6 col-12">
               <div class="payment-methods">
                 <img
                   src="/assets/images/visa.png"

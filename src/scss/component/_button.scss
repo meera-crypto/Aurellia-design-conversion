@@ -79,6 +79,10 @@ button {
     opacity 0.25s ease,
     visibility 0.25s ease;
 
+  @include mobile-lg() {
+    display: none !important;
+  }
+
   &:disabled {
     opacity: 0.4;
     cursor: not-allowed;

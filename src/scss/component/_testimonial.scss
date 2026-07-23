@@ -79,6 +79,7 @@
 
       @include mobile-lg() {
         width: 90%;
+        min-width: 0;
       }
 
       @include mobile-md() {

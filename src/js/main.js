@@ -60,6 +60,8 @@ function initMasterpieceCarousel() {
   let active = 0;
   let animating = false;
   const stepX = 100;
+  const mobileQuery = window.matchMedia("(max-width: 767px)");
+  const isMobile = () => mobileQuery.matches;
 
   const lightbox = document.createElement("div");
   lightbox.className = "masterpiece-lightbox";
@@ -70,6 +72,14 @@ function initMasterpieceCarousel() {
   const lightboxImg = document.createElement("img");
   lightboxImg.className = "masterpiece-lightbox__image";
   lightboxImg.alt = "";
+
+  const lightboxClose = document.createElement("button");
+  lightboxClose.type = "button";
+  lightboxClose.className = "masterpiece-lightbox__close";
+  lightboxClose.setAttribute("aria-label", "Close");
+  lightboxClose.innerHTML = "&times;";
+
+  lightbox.appendChild(lightboxClose);
   lightbox.appendChild(lightboxImg);
   document.body.appendChild(lightbox);
 
@@ -91,7 +101,22 @@ function initMasterpieceCarousel() {
     return ((n % total) + total) % total;
   }
 
+  function clearCardStyles() {
+    cards.forEach((card) => {
+      card.style.transition = "";
+      card.style.transform = "";
+      card.style.opacity = "";
+      card.style.zIndex = "";
+      card.style.pointerEvents = "";
+    });
+  }
+
   function render() {
+    if (isMobile()) {
+      clearCardStyles();
+      return;
+    }
+
     cards.forEach((card, i) => {
       let d = i - active;
       if (d > total / 2) d -= total;
@@ -106,13 +131,12 @@ function initMasterpieceCarousel() {
       card.style.transform = `translateX(${x}%) scale(${scale})`;
       card.style.opacity = String(opacity);
       card.style.zIndex = String(100 - abs);
-      //card.style.pointerEvents = abs === 0 ? "auto" : "none";
       card.style.pointerEvents = abs <= 1 ? "auto" : "none";
     });
   }
 
   function go(dir) {
-    if (animating) return;
+    if (isMobile() || animating) return;
     animating = true;
     active = wrap(active + dir);
     render();
@@ -127,6 +151,13 @@ function initMasterpieceCarousel() {
   cards.forEach((card, index) => {
     card.addEventListener("click", () => {
       if (animating) return;
+
+      if (isMobile()) {
+        const img = card.querySelector("img");
+        if (!img) return;
+        openLightbox(img.currentSrc || img.src, img.alt);
+        return;
+      }
 
       let d = index - active;
       if (d > total / 2) d -= total;
@@ -153,19 +184,6 @@ function initMasterpieceCarousel() {
     });
   });
 
-  //   card.addEventListener(
-  //     "wheel",
-  //     (e) => {
-  //       e.preventDefault();
-
-  //       if (Math.abs(e.deltaY) < 8) return;
-
-  //       go(e.deltaY > 0 ? 1 : -1);
-  //     },
-  //     { passive: false },
-  //   );
-  // });
-
   lightbox.addEventListener("click", (e) => {
     if (e.target !== lightboxImg) closeLightbox();
   });
@@ -179,6 +197,8 @@ function initMasterpieceCarousel() {
   stage.addEventListener(
     "wheel",
     (e) => {
+      if (isMobile()) return;
+
       // Prevent page scrolling anywhere over the carousel
       e.preventDefault();
 
@@ -203,6 +223,8 @@ function initMasterpieceCarousel() {
 
   stage.tabIndex = 0;
   stage.addEventListener("keydown", (e) => {
+    if (isMobile()) return;
+
     if (
       e.key === "ArrowRight" ||
       e.key === "ArrowDown" ||
@@ -216,6 +238,13 @@ function initMasterpieceCarousel() {
       go(-1);
     }
   });
+
+  const onViewportChange = () => render();
+  if (typeof mobileQuery.addEventListener === "function") {
+    mobileQuery.addEventListener("change", onViewportChange);
+  } else {
+    mobileQuery.addListener(onViewportChange);
+  }
 
   render();
 }

@@ -95,10 +95,13 @@ img {
   &-top-offer {
     max-width: rem(640);
     height: rem(420);
-    aspect-ratio: 640 / 420;
     border-top-left-radius: rem(100);
     overflow: hidden;
     display: block;
+
+    @include mobile-lg() {
+      height: rem(270);
+    }
   }
 
   &-featured-collection {

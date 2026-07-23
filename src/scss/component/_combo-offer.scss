@@ -10,7 +10,7 @@
     width: calc(50% - #{rem(12)});
 
     @include mobile-lg() {
-      width: 80%;
+      width: 70%;
     }
   }
 

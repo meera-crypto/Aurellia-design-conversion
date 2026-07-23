@@ -5,7 +5,7 @@
 .masterpiece-carousel {
   position: relative;
   width: 100%;
-  margin-top: rem(80);
+
   min-height: rem(400);
   overflow: hidden;
 
@@ -37,6 +37,56 @@
       object-fit: cover;
     }
   }
+
+  @include mobile-lg() {
+    margin-top: rem(40);
+    min-height: 0;
+    overflow: visible;
+
+    .masterpiece-carousel-viewport {
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+
+    .masterpiece-carousel-list {
+      position: relative;
+      display: flex;
+      top: auto;
+      left: auto;
+      width: 100%;
+      height: auto;
+      transform: none;
+      gap: rem(16);
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-x;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .masterpiece-carousel-item {
+      position: relative;
+      top: auto;
+      left: auto;
+      flex-shrink: 0;
+      width: 70%;
+      height: auto;
+      aspect-ratio: 370 / 450;
+      transform: none !important;
+      opacity: 1 !important;
+      z-index: 1 !important;
+      pointer-events: auto !important;
+      scroll-snap-align: start;
+    }
+  }
 }
 
 .masterpiece-lightbox {
@@ -60,6 +110,33 @@
     pointer-events: auto;
   }
 
+  &__close {
+    position: absolute;
+    top: rem(20);
+    right: rem(20);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(44);
+    height: rem(44);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba($color-black, 0.55);
+    color: $color-white;
+    font-size: rem(32);
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba($color-black, 0.8);
+      outline: none;
+    }
+  }
+
   &__image {
     max-width: min(90vw, rem(720));
     max-height: 85vh;
@@ -75,7 +152,7 @@
   position: relative;
   width: calc((#{rem(370)} * 3) + (#{rem(24)} * 2)); // 3 cards + 2 gaps
   max-width: 100%;
-  height: rem(400);
+  height: rem(600);
   margin: 0 auto;
   overflow: hidden;
 }
