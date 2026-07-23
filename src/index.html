@@ -44,9 +44,36 @@
               /></a>
             </div>
             <div class="col-lg-5 col-6 header-actions">
-              <a href="#" class="action-search"
-                ><span class="icon icon-search"></span
-              ></a>
+              <div class="header-search">
+                <button
+                  type="button"
+                  class="action-search"
+                  aria-expanded="false"
+                  aria-controls="headerSearchPanel"
+                  aria-label="Open search"
+                >
+                  <span class="icon icon-search"></span>
+                </button>
+                <form
+                  id="headerSearchPanel"
+                  class="header-search-panel"
+                  role="search"
+                  action="#"
+                  method="get"
+                >
+                  <label class="visually-hidden" for="headerSearchInput"
+                    >Search</label
+                  >
+                  <input
+                    id="headerSearchInput"
+                    class="header-search-input"
+                    type="search"
+                    name="q"
+                    placeholder="Search"
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
               <a href="#" class="action-favorite"
                 ><span class="icon icon-favorite-white"></span
               ></a>
@@ -888,7 +915,6 @@
                       Wedding Collection</span
                     >
                   </a>
-
                   <a href="" class="featured-collection-card">
                     <div
                       class="featured-collection-image oval-image-featured-collection"
@@ -903,6 +929,8 @@
                         <img
                           src="/assets/images/featured-collection/daily-wear.jpg"
                           alt="Featured collection"
+                          height="390"
+                          width="230"
                         />
                       </picture>
                     </div>
@@ -2377,7 +2405,7 @@
       <div class="social-copyright">
         <div class="container">
           <div class="social-links row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-5 col-12">
               <div class="social-media">
                 <p>Social :</p>
                 <ul class="social-media-links">
@@ -2404,7 +2432,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-md-7 col-12">
               <div class="payment-methods">
                 <img
                   src="/assets/images/visa.png"
@@ -2460,14 +2488,14 @@
         </div>
         <div class="container">
           <div class="copyright-content row">
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 copyright-content-text">
               <p>
                 2025
                 <a href="#" class="copyright-brand-link">Aurellia</a> Company
                 Limited. All Rights Reserved.
               </p>
             </div>
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 copyright-content-policy">
               <ul class="copyright-policy">
                 <li class="copyright-policy-item">
                   <a href="#" class="copyright-policy-link"

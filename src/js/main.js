@@ -44,7 +44,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   initMasterpieceCarousel();
+  initHeaderSearch();
 });
+
+function initHeaderSearch() {
+  const root = document.querySelector(".header-search");
+  const toggle = root?.querySelector(".action-search");
+  const input = root?.querySelector(".header-search-input");
+  if (!root || !toggle || !input) return;
+
+  const open = () => {
+    root.classList.add("is-open");
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Close search");
+    input.focus();
+  };
+
+  const close = () => {
+    root.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open search");
+  };
+
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    root.classList.contains("is-open") ? close() : open();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && root.classList.contains("is-open")) close();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!root.contains(e.target) && root.classList.contains("is-open")) close();
+  });
+}
 
 function initMasterpieceCarousel() {
   const root = document.querySelector(".masterpiece-carousel");

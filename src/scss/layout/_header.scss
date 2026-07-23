@@ -6,7 +6,80 @@ header {
 }
 
 .header-main {
+  position: relative;
   background-color: $color-brand-primary;
+}
+
+.header-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include mobile-lg() {
+    position: static;
+  }
+}
+
+.action-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.header-search-panel {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(280);
+  margin-right: rem(12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+
+  .header-search.is-open & {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  @include mobile-lg() {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: none;
+    width: 100%;
+    margin: 0;
+    padding: rem(12) rem(16);
+    background-color: $color-brand-primary;
+    border-top: 1px solid rgba($color-white, 0.15);
+    z-index: 1030;
+  }
+}
+
+.header-search-input {
+  width: 100%;
+  padding: rem(10) rem(14);
+  border: 1px solid $color-gray-border;
+  background-color: $color-white;
+  color: $color-gray-dark;
+  font-family: $font-secondary;
+  font-size: rem(14);
+
+  // &:focus {
+  //   outline: none;
+  //   border-color: $color-brand-secondary;
+  // }
 }
 
 .header-nav {
